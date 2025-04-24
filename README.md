@@ -1,2 +1,6 @@
-# software-dev-019
-A collection of all the demos and guides we we will use during the software development course.
+# Contents
+
+- Demo code from our classes.
+- Useful guides for reference.
+
+Have fun! (ﾉ ◕ ヮ ◕)ﾉ\*:・ﾟ ✧
