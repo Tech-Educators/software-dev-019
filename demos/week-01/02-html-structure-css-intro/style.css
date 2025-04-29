@@ -1,0 +1,34 @@
+/* CSS means Cascading StyleSheet */
+
+body {
+  /* in this case, the conrflowerblue is applied because it comes later in the rules that change the body tag */
+  background-color: peru;
+  font-family: monospace;
+  background-color: cornflowerblue;
+}
+
+header {
+  background-color: indianred;
+}
+
+h1 {
+  /* in this case, the chartreuse is applied because it comes later in the rules that change the h1 tag */
+
+  background-color: blue;
+  background-color: chartreuse;
+}
+
+main {
+  background-color: green;
+}
+
+footer {
+  background-color: darkblue;
+}
+
+/* if we select an element using the tag, all elements with the same tag will get the same style applied */
+button {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: blanchedalmond;
+  font-size: 2rem;
+}
