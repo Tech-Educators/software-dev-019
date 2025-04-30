@@ -1,0 +1,33 @@
+/* this is a basic reset of default values */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(93, 61, 10);
+}
+
+.red-panda {
+  height: 500px;
+  width: 400px;
+  padding: 30px;
+  border: 5px solid black;
+  margin: 20px;
+}
+
+.green-frog {
+  height: 250px;
+  width: 150px;
+  padding: 40px;
+  border: 10px solid yellowgreen;
+  margin: 50px;
+}
+
+/* TIPS */
+/* - margin values will overlap --> margin collapse*/
+/* - padding values do not overlap */
+/* - padding carries background colour and you can style it, margin is blank */
+/* - if you want to stop the browser from adding default values, we can have a reset at the top of the CSS stylesheet */
