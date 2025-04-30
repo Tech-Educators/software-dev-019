@@ -1,0 +1,39 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flowers {
+  width: 350px;
+  height: 200px;
+  padding: 20px;
+}
+
+/* position absolute will move an element from the top, right, bottom, or left in relation to our website page. It's not considering the element's parent container */
+h2 {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  /* this selector does not work because the h2 can't be 50px from the left and from the right at the same time */
+  /* right: 50px; */
+}
+
+/* position relative is applied to the parent container! This will change how the children inside position themselves. Instead using the whole page as a reference, the children will use their parent container as reference */
+.container {
+  position: relative;
+  position: absolute;
+  bottom: 40px;
+}
+
+.flowers {
+  position: absolute;
+  right: 70px;
+}
+
+header {
+  position: fixed;
+  /* z-index will put our header in front of the rest of the other elements */
+  z-index: -1;
+}
