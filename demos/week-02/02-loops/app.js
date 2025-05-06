@@ -2,7 +2,7 @@
 // we use loops to repeat a task multiple times
 // we will have a loop block where we will add how many times the loop will run and the task itself with as many steps as we need.
 
-// types of loops
+// TYPES OF LOOPS
 // for loop --> a loop where I can specify how many times I run a task
 // I want to run a task FOR a specific amount of times
 
@@ -56,3 +56,26 @@ colours.forEach(function (item, index) {
   //task to repeat
   console.log(item, index);
 });
+
+//===============================================================
+// while loops
+// When we want to run a task for an indefinite amount of times, we can use a while loop
+
+//examples
+// answering questions --> in case the user gives you a non-valid answer
+// entering a password --> repeat until the user enters the correct password
+// logging in --> user needs correct username
+
+//structure
+// while (loop settings --> condition){
+//task
+// }
+
+//this data would be provided by the user in a real-life website
+const username = "Manny";
+
+while (username !== "Manny") {
+  alert("Wrong username");
+}
+
+//a while loop looks very similar to a conditional. The difference is that a conditional will run only once.
