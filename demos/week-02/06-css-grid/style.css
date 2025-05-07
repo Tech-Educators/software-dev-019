@@ -1,0 +1,41 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* in the body container, we are going to build our grid */
+.body-container {
+  background-color: peru;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100px 1fr 3fr 1fr 100px;
+  grid-template-rows: 100px 1fr 3fr 1fr 100px;
+  /* grid-template: ; to build both columns and rows at the same time*/
+}
+
+/* once we have the grid template, we can then position the elements into specific boxes in the grid */
+.top-header {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  /* grid-column: ; */
+  grid-row-start: 2;
+  grid-row-end: 3;
+  /* grid-row: ; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bottom-footer {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+.main-container {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
