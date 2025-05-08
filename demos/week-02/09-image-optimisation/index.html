@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Image optimisation</h1>
+    <!-- make sure that your original image size is the size you need for your
+    website -->
+    <img
+      src="https://picsum.photos/600/900"
+      alt="null"
+      width="300"
+      height="500"
+    />
+    <!-- when using srcset, make sure that each breakpoint has a different image file (resized) src -->
+    <img
+      src="https://picsum.photos/300/500"
+      alt="null"
+      srcset="
+        https://picsum.photos/600/900  600w,
+        https://picsum.photos/700/1000 800w
+      "
+    />
+    <img src="https://picsum.photos/600/900" alt="null" />
+    <img src="https://picsum.photos/600/900" alt="null" />
+    <img src="https://picsum.photos/600/900" alt="null" />
+  </body>
+</html>
