@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Forms: Structure and Styling</h1>
+    <form id="main-form">
+      <!-- attributes for and name are a way to unniquely identify your label and input. Make sure they match -->
+      <!-- form flow: label and input, match for and name, validation -->
+      <fieldset>
+        <legend>Personal Details</legend>
+        <label for="first-name">First Name: </label>
+        <input
+          type="text"
+          name="first-name"
+          required
+          placeholder="Write your name"
+        />
+        <label for="email">Email: </label>
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Type your email"
+        />
+        <label for="dob">Date of Birth: </label>
+        <input type="date" name="dob" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Do you like this website?</legend>
+        <label for="like"
+          ><input type="radio" name="like" value="yes" />Yes
+        </label>
+        <label for="like"
+          ><input type="radio" name="like" value="no" />No
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What is your favourite ice-cream flavour?</legend>
+        <label for="ice-cream-flavour">Ice-cream flavour</label>
+        <select name="ice-cream-flavour">
+          <option value="" selected hidden>Pick a flavour</option>
+          <option value="vanilla">Vanilla</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="peanut-butter">Peanut Butter</option>
+          <option value="pistachio">Pistachio</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
