@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.js" defer></script>
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>Query Strings GET routes</title>
+  </head>
+  <body>
+    <!-- TODO: add an element to collect user's data -->
+    <form id="staff-form">
+      <fieldset>
+        <legend>Staff Data</legend>
+
+        <label for="staff_name">Staff Name: </label>
+        <input type="text" name="staff_name" required />
+
+        <label for="staff_location">Staff Location: </label>
+        <input type="text" name="staff_location" required />
+
+        <label for="staff_role">Staff Role: </label>
+        <select name="staff_role" required>
+          <option value="" selected hidden>Select a role</option>
+          <option value="instructor">instructor</option>
+          <option value="TA">TA</option>
+        </select>
+
+        <label for="staff_salary">Staff Salary: </label>
+        <input
+          type="number"
+          min="1000000"
+          max="10000000"
+          name="staff_salary"
+          required
+        />
+        <button type="submit">Submit data</button>
+      </fieldset>
+    </form>
+    <section id="staff-section">
+      <!-- here is where the staff data will be appended -->
+    </section>
+  </body>
+</html>
