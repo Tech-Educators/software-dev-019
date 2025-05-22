@@ -1,0 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* make sure your styles are dynamic
+add media queries for different screen sizes (one breakpoint) */
