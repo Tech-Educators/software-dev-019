@@ -1,0 +1,11 @@
+/* from now on, it's more convenient to use pure selectors, like classNames, to apply your styles */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-heading {
+  color: blue;
+}

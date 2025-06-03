@@ -1,0 +1,15 @@
+/* I use the App.css stylesheet for global styles */
+
+/* the :root pseudo-class applies styles looking at the top level of your app */
+
+/* import tailwind into your globals to make it available to your whole website */
+
+@import "tailwindcss";
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  background-color: peru;
+}
