@@ -1,0 +1,11 @@
+/* nesting rules */
+
+.title {
+  color: peru;
+
+  &:hover {
+    color: burlywood;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
