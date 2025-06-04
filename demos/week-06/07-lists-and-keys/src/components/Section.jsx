@@ -1,3 +1,4 @@
+//we need to pass props!
 export default function Section(props) {
   return (
     <>
