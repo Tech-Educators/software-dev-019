@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+      // you can add more paths and abbreviations
+      // "£/*": ["./src/components"]
+    }
+  }
+}
