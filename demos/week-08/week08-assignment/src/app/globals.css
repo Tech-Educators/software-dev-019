@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+/* use the :root to set up your CSS variables */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* use the @theme to set up your Tailwind custom utility classes (optional) */
+/* @theme {
+} */
+
+/* remember yout media queries */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* you can also have CSS modules to style your components */
