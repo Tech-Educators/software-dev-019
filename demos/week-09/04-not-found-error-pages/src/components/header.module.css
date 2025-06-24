@@ -1,0 +1,15 @@
+/* we need to use pure selectors (className) to style our elements */
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.link {
+  color: var(--link-colour);
+  padding: 20px;
+  font-weight: 600;
+  &:hover {
+    background-color: var(--accent-colour);
+  }
+}
