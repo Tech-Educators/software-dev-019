@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+:root {
+  /* CSS variables  --> store values to improve reusability */
+  /* My recommendation is that you declare your variables in the :root, so they are available everywhere in your app */
+  --background-colour: #a71537;
+  --font-colour: white;
+  --accent-colour: #ffd166;
+  --link-colour: #0a075c;
+}
+
+/* Tailwind themes is a custom default set of values that we can use as part of the other Tailwind utility classes */
+/* the values you set up in a theme are available with ther Tailwind utility classes. For example, this colour can applied to text, background... */
+@theme {
+  --color-peru-500: #cd853f;
+}
+
+body {
+  /* to use a CSS variable, we need the function var() */
+  background: var(--background-colour);
+  color: var(--font-colour);
+  font-family: Arial, Helvetica, sans-serif;
+}
