@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+.light {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.colourblind {
+  background-color: blue;
+  color: orange;
+}
+
+.dyslexia {
+  background-color: orange;
+  color: black;
+  font-family: monospace;
+}
